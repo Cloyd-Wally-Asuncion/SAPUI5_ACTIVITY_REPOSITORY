@@ -1,0 +1,124 @@
+{
+  "Product": [
+    {
+      "ProductID": 1,
+      "ProductName": "Wireless Mouse",
+      "SupplierID": 101,
+      "CategoryID": 3,
+      "QuantityPerUnit": "1 unit",
+      "UnitPrice": 25.99,
+      "UnitsInStock": 150,
+      "UnitsOnOrder": 30,
+      "ReorderLevel": 50,
+      "Discontinued": false
+    },
+    {
+      "ProductID": 2,
+      "ProductName": "Bluetooth Speaker",
+      "SupplierID": 102,
+      "CategoryID": 5,
+      "QuantityPerUnit": "1 piece",
+      "UnitPrice": 49.95,
+      "UnitsInStock": 80,
+      "UnitsOnOrder": 20,
+      "ReorderLevel": 40,
+      "Discontinued": false
+    },
+    {
+      "ProductID": 3,
+      "ProductName": "USB-C Charger",
+      "SupplierID": 103,
+      "CategoryID": 2,
+      "QuantityPerUnit": "1 charger",
+      "UnitPrice": 19.99,
+      "UnitsInStock": 200,
+      "UnitsOnOrder": 50,
+      "ReorderLevel": 60,
+      "Discontinued": false
+    },
+    {
+      "ProductID": 4,
+      "ProductName": "Gaming Keyboard",
+      "SupplierID": 104,
+      "CategoryID": 3,
+      "QuantityPerUnit": "1 keyboard",
+      "UnitPrice": 89.00,
+      "UnitsInStock": 40,
+      "UnitsOnOrder": 10,
+      "ReorderLevel": 25,
+      "Discontinued": false
+    },
+    {
+      "ProductID": 5,
+      "ProductName": "Noise-Cancelling Headphones",
+      "SupplierID": 105,
+      "CategoryID": 5,
+      "QuantityPerUnit": "1 pair",
+      "UnitPrice": 129.99,
+      "UnitsInStock": 60,
+      "UnitsOnOrder": 15,
+      "ReorderLevel": 30,
+      "Discontinued": false
+    },
+    {
+      "ProductID": 6,
+      "ProductName": "Smartphone Stand",
+      "SupplierID": 106,
+      "CategoryID": 1,
+      "QuantityPerUnit": "1 stand",
+      "UnitPrice": 12.49,
+      "UnitsInStock": 300,
+      "UnitsOnOrder": 0,
+      "ReorderLevel": 100,
+      "Discontinued": false
+    },
+    {
+      "ProductID": 7,
+      "ProductName": "Portable SSD 1TB",
+      "SupplierID": 107,
+      "CategoryID": 4,
+      "QuantityPerUnit": "1 drive",
+      "UnitPrice": 109.99,
+      "UnitsInStock": 75,
+      "UnitsOnOrder": 25,
+      "ReorderLevel": 35,
+      "Discontinued": false
+    },
+    {
+      "ProductID": 8,
+      "ProductName": "LED Desk Lamp",
+      "SupplierID": 108,
+      "CategoryID": 6,
+      "QuantityPerUnit": "1 lamp",
+      "UnitPrice": 39.95,
+      "UnitsInStock": 120,
+      "UnitsOnOrder": 10,
+      "ReorderLevel": 40,
+      "Discontinued": false
+    },
+    {
+      "ProductID": 9,
+      "ProductName": "Ergonomic Office Chair",
+      "SupplierID": 109,
+      "CategoryID": 7,
+      "QuantityPerUnit": "1 chair",
+      "UnitPrice": 199.00,
+      "UnitsInStock": 25,
+      "UnitsOnOrder": 5,
+      "ReorderLevel": 10,
+      "Discontinued": false
+    },
+    {
+      "ProductID": 10,
+      "ProductName": "Webcam 1080p",
+      "SupplierID": 110,
+      "CategoryID": 3,
+      "QuantityPerUnit": "1 webcam",
+      "UnitPrice": 59.99,
+      "UnitsInStock": 90,
+      "UnitsOnOrder": 20,
+      "ReorderLevel": 30,
+      "Discontinued": false
+    }
+  ]
+}

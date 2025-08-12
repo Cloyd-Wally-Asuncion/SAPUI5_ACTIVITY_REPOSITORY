@@ -1,0 +1,32 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.training.activity1.controller.View1">
+    <Page id="page" title="{i18n>title}">
+    <content>
+        <sap.ui.layout.form:SimpleForm editable="true" layout="ResponsiveGridLayout" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" id="form0">
+            <sap.ui.layout.form:content>
+                <Label text="Name" id="label0"/>
+                <Input width="100%" id="name_inpt"/>
+                <Label text="Street/No" id="label2"/>
+                <Input xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" width="100%" id="strtNo_inpt1"/>
+                <Input width="100%" id="strtNo_inpt2"/>
+                <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" text="ZIP Code/City" id="label3"/>
+                <Input xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" width="100%" id="zCode_inpt"/>
+                <Input xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" width="100%" id="city_inpt"/>
+                <Label xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" text="Country" id="label4"/>
+                <Select xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="country_inpt">
+                    <items>
+                        <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="England" id="item1"/>
+                        <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Germany" id="item2"/>
+                        <core:Item xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns:core="sap.ui.core" key="item-key-3" text="USA" id="item3"/>
+                        <core:Item xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns:core="sap.ui.core" key="item-key-4" text="Philippines" id="item4"/>
+                        </items>
+                    
+                </Select></sap.ui.layout.form:content>
+        </sap.ui.layout.form:SimpleForm>
+        <HBox width="100%" id="hbox0" justifyContent="End">
+            <items>
+                <Button xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Save" id="Save" type="Accept"/><Button xmlns="sap.m" text="Clear" id="Clear" type="Reject" press="onClickClear"/>
+            </items>
+        </HBox>
+    </content>
+    </Page>
+</mvc:View>
