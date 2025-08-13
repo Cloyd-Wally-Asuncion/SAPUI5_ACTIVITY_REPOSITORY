@@ -27,7 +27,6 @@
           value1: false
         }
       }">
-
       <columns>
         <Column id="productColumn">
           <header>
@@ -45,7 +44,6 @@
           </header>
         </Column>
       </columns>
-
       <items>
         <ColumnListItem id="_IDGenColumnListItem">
           <cells>
@@ -62,5 +60,3 @@
     </Table>
   </Page>
 </mvc:View>
-
-
