@@ -6,10 +6,10 @@ sap.ui.define([
         "use strict";
  
         return {
-            formatMail: function (sEid, sDomain, sSubject, sBody) {
+            formatMail: function (sEID, sDomain, sSubject, sBody) {
                 return mobileLibrary.URLHelper.normalizeEmail(
-                    sEid + sDomain,
-                    sSubject + " " + sEid,
+                    sEID + sDomain,
+                    sSubject + " " + sEID,
                     sBody
                 );
             },
@@ -20,4 +20,3 @@ sap.ui.define([
             }
         }
     });
- 

@@ -46,16 +46,16 @@
       "cozy": true
     },
     "models": {
-      "ProductsModel":{
-        "type": "sap.ui.model.json.JSOModel",
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "sapips.training.jsonbinding.i18n.i18n"
+        }
+      },
+      "ProductsModel": {
+        "type": "sap.ui.model.json.JSONModel",
         "uri": "model/ProductsModel.json"
-    },
-    "i18n": {
-      "type": "sap.ui.model.resource.ResourceModel",
-      "settings": {
-        "bundleName": "sapips.training.jsonbinding.i18n.i18n"
-       }
-     }
+      }
     },
     "resources": {
       "css": [
@@ -78,17 +78,17 @@
       },
       "routes": [
         {
-          "name": "RouteJSONBinding",
+          "name": "RouteJSONbinding",
           "pattern": ":?query:",
           "target": [
-            "TargetJSONBinding"
+            "TargetJSONbinding"
           ]
         }
       ],
       "targets": {
-        "TargetJSONBinding": {
-          "id": "JSONBinding",
-          "name": "JSONBinding"
+        "TargetJSONbinding": {
+          "id": "JSONbinding",
+          "name": "JSONbinding"
         }
       }
     },

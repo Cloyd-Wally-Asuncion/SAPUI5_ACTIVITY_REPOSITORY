@@ -3,26 +3,27 @@ sap.ui.define([
   "sap/ui/model/json/JSONModel",
   "sapips/training/jsonbinding/model/formatter",
   "sap/m/library"
-], function (Controller, JSONModel, formatter, mobileLibrary) {
+], function (Controller, JSONModel, formatter, ) {
   "use strict";
  
-  return Controller.extend("sapips.training.jsonbinding.controller.View", {
+  return Controller.extend("sapips.training.jsonbinding.controller.Main", {
     formatter: formatter,
  
     onInit: function () {
-      var oData = new JSONModel({
-        EID: " ",
+      var oUserData = {
+        Eid: "",
         Enabled: true,
         Address: {
-          Street: " 33-A ",
-          City: " Laoag City,",
-          Zip: " 2900, ",
+          Street: " Taft Street ",
+          City: "Batac City",
+          Zip: " 2900 ",
           Country: "Philippines"
         },
-        SalesAmount: "1000",
-        CurrencyCode: "PHP"
-      });
-      this.getView().setModel(oEmployeeData, "DataModel");
+        SalesAmount: 87000,
+        CurrencyCode: "USD"
+      };
+      var oUserData = new JSONModel(oUserData);
+      this.getView().setModel(oUserData, "userData");
  
       var oProductModel = new JSONModel("/model/ProductsModel.json");
       this.getView().setModel(oProductModel, "ProductsModel")
