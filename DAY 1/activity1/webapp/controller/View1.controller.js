@@ -16,7 +16,6 @@ sap.ui.define([
             oView.byId("strtNo_inpt2").setValue(null);
             oView.byId("zCode_inpt").setValue(null);
             oView.byId("city_inpt").setValue(null);
-            oView.byId("country_inpt").setValue(null);
         }
     });
 });

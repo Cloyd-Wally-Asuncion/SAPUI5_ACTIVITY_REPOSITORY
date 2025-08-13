@@ -27,7 +27,7 @@
           value1: false
         }
       }">
-      <!-- Define Columns -->
+
       <columns>
         <Column id="productColumn">
           <header>
@@ -45,17 +45,14 @@
           </header>
         </Column>
       </columns>
-      <!-- Define Row Template -->
+
       <items>
         <ColumnListItem id="_IDGenColumnListItem">
           <cells>
-            <!-- Product Column using ObjectIdentifier -->
             <ObjectIdentifier id="_IDGenObjectIdentifier"
               title="{ProductName}"
               text="Product ID: {ProductID}" />
-            <!-- Supplier ID Column using Text -->
             <Text id="_IDGenText" text="{SupplierID}" />
-            <!-- Price Column using ObjectIdentifier -->
             <ObjectIdentifier id="_IDGenObjectIdentifier1"
               title="{UnitPrice}"
               text="{QuantityPerUnit}" />
