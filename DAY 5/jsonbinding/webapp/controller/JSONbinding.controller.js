@@ -10,20 +10,20 @@ sap.ui.define([
     formatter: formatter,
  
     onInit: function () {
-      var oUserData = {
+      var oData = {
         Eid: "",
         Enabled: true,
         Address: {
-          Street: " Taft Street ",
-          City: "Batac City",
+          Street: "Sitio 4, Barangay 33-A LPZ",
+          City: "City of Laoag",
           Zip: " 2900 ",
           Country: "Philippines"
         },
-        SalesAmount: 87000,
-        CurrencyCode: "USD"
+        SalesAmount: 9999,
+        CurrencyCode: "PHP"
       };
-      var oUserData = new JSONModel(oUserData);
-      this.getView().setModel(oUserData, "userData");
+      var mData = new JSONModel(oData);
+      this.getView().setModel(mData, "uData");
  
       var oProductModel = new JSONModel("/model/ProductsModel.json");
       this.getView().setModel(oProductModel, "ProductsModel")

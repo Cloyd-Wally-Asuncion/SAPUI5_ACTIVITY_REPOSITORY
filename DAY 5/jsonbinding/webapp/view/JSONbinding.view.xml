@@ -1,6 +1,5 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sapips.training.jsonbinding.controller.JSONbinding">
         <Page id="page">
-
         <Panel
             id="panelDataBinding"
             width="auto"
@@ -8,15 +7,15 @@
             expanded="true"
             headerText="Data Binding Basics"
             class="sapUiResponsiveMargin">
-            <sap.ui.layout.form:SimpleForm
+            <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core"
                 id="form1"
                 editable="true"
                 layout="ResponsiveGridLayout">
                 <sap.ui.layout.form:content>
                     <Label id="lbl_eid" text="EID"/>
-                    <Input id="inpt_eid" width="100%" value="{userData>/EID}" enabled="{userData>/Enabled}"/>
+                    <Input id="inpt_eid" width="100%" value="{uData>/EID}" enabled="{uData>/Enabled}"/>
                     <Label id="lbl_enable" text="Enabled"/>
-                    <CheckBox id="cb_enabled" selected="{userData>/Enabled}"/>
+                    <CheckBox id="cb_enabled" selected="{uData>/Enabled}"/>
                 </sap.ui.layout.form:content>
             </sap.ui.layout.form:SimpleForm>
         </Panel>
@@ -28,7 +27,7 @@
             expanded="true"
             headerText="Address Details"
             class="sapUiResponsiveMargin">
-            <sap.ui.layout.form:SimpleForm
+            <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core"
                 id="form2"
                 editable="true"
                 layout="ResponsiveGridLayout">
@@ -37,11 +36,11 @@
                     <Text
                         id="inpt_address"
                         class="sapUiSmallMarginBottom"
-                        text="{userData>/Address/Street} {userData>/Address/Zip} {userData>/Address/City} {userData>/Address/Country}"/>
+                        text="{uData>/Address/Street} {uData>/Address/Zip} {uData>/Address/City} {uData>/Address/Country}"/>
                     <Link
                         id="link_email"
                         text="Send Email"
-                        href="{ parts: [ { path: 'userData>/EID' }, { path: 'i18n>domain' }, { path: 'i18n>mailSubject' }, { path: 'i18n>mailBody' } ], formatter: '.formatter.formatMail' }"/>
+                        href="{ parts: [ { path: 'uData>/EID' }, { path: 'i18n>domain' }, { path: 'i18n>mailSubject' }, { path: 'i18n>mailBody' } ], formatter: '.formatter.formatMail' }"/>
                     <Label id="lbl_salesAmount" class="sapUiSmallMarginBegin" text="Sales Amount:"/>
                     <Input
                         id="inpSalesAmount"
@@ -49,8 +48,8 @@
                         class="sapUiSmallMarginBegin"
                         enabled="true"
                         maxLength="8"
-                        value="{ parts: [ { path: 'userData>SalesAmount' }, { path: 'userData>CurrencyCode' } ], type: 'sap.ui.model.type.Currency', formatOptions: { showMeasure: false } }"
-                        description="{userData>/CurrencyCode}"/>
+                        value="{ parts: [ { path: 'uData>SalesAmount' }, { path: 'uData>CurrencyCode' } ], type: 'sap.ui.model.type.Currency', formatOptions: { showMeasure: false } }"
+                        description="{uData>/CurrencyCode}"/>
                 </sap.ui.layout.form:content>
             </sap.ui.layout.form:SimpleForm>
         </Panel>
@@ -73,7 +72,7 @@
                         id="obj_listItem"
                         title="{ProductsModel>ProductName}"
                         number="{ parts: [ { path: 'ProductsModel>UnitPrice' }, { path: 'ProductsModel>/CurrencyCode' } ], type: 'sap.ui.model.type.Currency', formatOptions: { showMeasure: false } }"
-                        numberUnit="{userData>/CurrencyCode}">
+                        numberUnit="{uData>/CurrencyCode}">
                         <attributes>
                             <ObjectAttribute
                                 id="obj_qtyPerUnit"
@@ -95,31 +94,25 @@
             expanded="true"
             headerText="Product Details"
             class="sapUiResponsiveMargin">
-            <sap.ui.layout.form:SimpleForm
+            <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core"
                 id="Product_details"
                 editable="false"
                 layout="ResponsiveGridLayout">
                 <sap.ui.layout.form:content>
                     <Label id="lbl_prodID" text="Product ID"/>
                     <Input id="inpt_prodID" editable="false" value="{ProductsModel>ProductID}"/>
-
                     <Label id="lbl_prodName" text="Product Name"/>
                     <Input id="inpt_prodName" editable="false" value="{ProductsModel>ProductName}"/>
-
                     <Label id="lbl_quanPerUnit" text="Quantity Per Unit"/>
                     <Input id="inpt_quanPerUnit" editable="false" value="{ProductsModel>QuantityPerUnit}"/>
-
                     <Label id="lbl_unitPrice" text="Unit Price"/>
                     <Input id="inpt_unitPrice" editable="false" value="{ProductsModel>UnitPrice}" type="Number"/>
-
                     <Label id="lbl_unitsInStock" text="Units In Stock"/>
                     <Input id="inpt_unitsInStock" editable="false" value="{ProductsModel>UnitsInStock}" type="Number"/>
-
                     <Label id="lbl_discontinued" text="Discontinued"/>
                     <Input id="inpt_discontinued" editable="false" value="{ProductsModel>Discontinued}"/>
                 </sap.ui.layout.form:content>
             </sap.ui.layout.form:SimpleForm>
         </Panel>
-
     </Page>
 </mvc:View>
