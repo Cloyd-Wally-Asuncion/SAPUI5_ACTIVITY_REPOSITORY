@@ -1,59 +1,54 @@
-<mvc:View controllerName="sapips.training.odata.controller.Main"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-<Page id="page" title="{i18n>appTitle}">
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m" controllerName="sapips.training.odata.controller.Main">
+  <Page id="page" title="{i18n>title}">
     <Panel
-      xmlns="sap.m" width="auto" expandable="false" expanded="true" id="panel0" backgroundDesign="Transparent">
+      xmlns="sap.m" width="auto" expandable="false" expanded="true" id="panel" backgroundDesign="Transparent">
       <headerToolbar>
-        <Toolbar id="toolbar1" design="Transparent">
-          <Title id="title0" text="Products"/>
+        <Toolbar id="toolbar" design="Transparent">
+          <Title id="title_header" text="Products"/>
         </Toolbar>
       </headerToolbar>
       <content>
-        <Text text="Wide range of available products" id="text5"/>
+      <Text text="{i18n>subHeading}" id="title_subHeader"/>
       </content>
     </Panel>
-    <Table
-      id="listProduct"
-      items="{
-        path: '/Products',
-        sorter: {
-          path: 'ProductName',
-          descending: false
-        },
-        filters: {
-          path: 'Discontinued',
-          operator: 'EQ',
-          value1: false
-        }
-      }">
+    <Table id="listProduct" 
+    items="{         
+    path: '/Products',         
+    sorter: {           
+    path: 'ProductName',           
+    descending: false         
+    },         
+    filters: {           
+    path: 'Discontinued',           
+    operator: 'EQ',           
+    value1: false         
+    }       
+    }">
       <columns>
         <Column id="productColumn">
           <header>
-            <Label id="_IDGenLabel1" text="Product" />
+            <Label id="col_product" text="Product"/>
           </header>
         </Column>
         <Column id="supplierColumn">
           <header>
-            <Label id="_IDGenLabel2" text="Supplier ID" />
+            <Label id="col_supplierID" text="Supplier ID"/>
           </header>
         </Column>
         <Column id="priceColumn">
           <header>
-            <Label id="_IDGenLabel3" text="Price" />
+            <Label id="col_price" text="Price"/>
           </header>
         </Column>
       </columns>
       <items>
         <ColumnListItem id="_IDGenColumnListItem">
           <cells>
-            <ObjectIdentifier id="_IDGenObjectIdentifier"
-              title="{ProductName}"
-              text="Product ID: {ProductID}" />
-            <Text id="_IDGenText" text="{SupplierID}" />
-            <ObjectIdentifier id="_IDGenObjectIdentifier1"
-              title="{UnitPrice}"
-              text="{QuantityPerUnit}" />
+            <ObjectIdentifier id="lbl_productName" title="{ProductName}" text="{i18n>productID} {ProductID}"/>
+            <Text id="lbl_supplierID" text="{SupplierID}"/>
+            <ObjectIdentifier id="lbl_unitPrice" title="{UnitPrice}" text="{QuantityPerUnit}"/>
           </cells>
         </ColumnListItem>
       </items>
