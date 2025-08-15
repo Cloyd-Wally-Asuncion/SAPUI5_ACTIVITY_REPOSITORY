@@ -5,7 +5,7 @@
         <customHeader>
             <Bar id="bar2">
                 <contentMiddle>
-                    <Label id="label1" text="View Page 1" class="headerTitle"/>
+                    <Label id="label1" text="View Page 2" class="headerTitle"/>
                 </contentMiddle>
             </Bar>
         </customHeader>
