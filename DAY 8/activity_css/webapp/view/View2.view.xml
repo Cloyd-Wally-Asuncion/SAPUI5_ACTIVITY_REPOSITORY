@@ -1,0 +1,21 @@
+<mvc:View controllerName="sapips.training.activitycss.controller.View1"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+    <Page id="page1" title="{i18n>title}" class="headerTitle">
+        <customHeader>
+            <Bar id="bar2">
+                <contentMiddle>
+                    <Label id="label1" text="View Page 1" class="headerTitle"/>
+                </contentMiddle>
+            </Bar>
+        </customHeader>
+        <footer>
+            <Bar id="bar3" class="footerBar">
+                <contentRight>
+                    <Button id="btn2" text="Return Page" press="onPage2ToPage1"/>
+                    <Button id="btn3" text="Exit" press="onThanksPress"/>
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

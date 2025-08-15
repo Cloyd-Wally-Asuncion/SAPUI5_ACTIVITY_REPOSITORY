@@ -1,0 +1,25 @@
+/* Enter your custom styles here */
+.sapMIBar-CTX .sapMLabel {
+    color: darkblue;
+}
+
+.footerBar {
+    background-color: lightblue !important;
+}
+
+.customMessageBox .sapMBar {
+    background-color: blue !important;
+}
+
+.customMessageBox .sapMBar .sapMTitle{
+    color: white !important;
+}   
+
+
+
+
+
+
+
+
+
